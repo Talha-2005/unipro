@@ -993,3 +993,171 @@ a.order{
     padding-top: 20px;
     font-size: 12px;
 }
+
+/* About Us Section */
+.about-us {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-story,
+.about-vision,
+.about-mission {
+    background-color: #555;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+
+.about-us h1 {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    color: white;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+.about-team {
+    margin-top: 40px;
+}
+
+.about-team h2 {
+    color: black;
+    text-align: center;
+}
+
+.about-team-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-team-card {
+    background-color: #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+}
+
+.about-team-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #ffbd12;
+}
+
+.about-team-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffbd12;
+}
+
+.about-team-card p {
+    color: #ccc;
+}
+
+.more-info {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ffbd12;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.more-info:hover {
+    background-color: #e6a900;
+}
+
+@media screen and (max-width: 768px) {
+    .about-team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-team-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Testimonial Section */
+.testimonials {
+    margin-top: 40px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.testimonial-card {
+    background-color: #555;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #ffbd12;
+}
+
+.testimonial-card p {
+    color: white;
+    font-style: italic;
+}
+
+.testimonial-card h3 {
+    margin-top: 10px;
+    color: #ffbd12;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+ 

@@ -67,3 +67,17 @@ document.getElementById("searchButton").addEventListener("click", function() {
     let searchQuery = document.getElementById("searchInput").value;
     alert("You searched for: " + searchQuery);
 });
+
+$(document).ready(function(){
+    $("#searchInput").on("keyup",function(){
+        var value = $(this).val().toLowerCase();
+
+        $("#cont, .product-card").filter(function(){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
+        })
+    })
+}
+
+)
+
+
