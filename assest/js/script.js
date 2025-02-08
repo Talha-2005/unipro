@@ -6,78 +6,70 @@ $(document).ready(function () {
         $(".side-nav").toggle(300);
     })
 })
-//  add to cart
-// $(document).ready(function () {
-//     let totalPrice = 0;
-//     let itemCount = 0;
-
-//     $(".addToCart").click(function () {
-//         let myCard = $(this).closest(".mycard");
-
-//         let itemPic = myCard.find("img").attr("src");
-//         let itemName = myCard.find("a.title").text();
-//         let itemPrice = parseFloat( myCard.find(".price p").text().replace("PKR", "").trim());
-
-//         let item = `        <div class="cart-content">
-//             <div class="cart-pic">
-//                 <img src="${itemPic}" alt="">
-//             </div>
-//             <div class="cart-info">
-//                 <p>${itemName}</p>
-//             </div>
-//             <div class="cart-total">
-//                 <p>PKR ${itemPrice}</p>
-//             </div>
-//             <div class="del">
-//                 <i class="fa-solid fa-trash"></i>
-//             </div>
-//         </div>
-//         `;
-//         $(".cart-box").append(item)
-//         alert("added to cart");
-
-//     // Total Price
-//     totalPrice += itemPrice;
-//     $("#total").text(totalPrice.toFixed(2));
-
-//     itemCount++;
-//     $(".count").text(itemCount);
-
-//     });
-
-//     // Removing Items
-//     $(".cart-box").on("click", ".del", function () {
-//         let itemPrice = parseFloat($(this).closest(".cart-content").find(".cart-total p").text().replace("PKR", "").trim());
-
-
-//         totalPrice -= itemPrice; 
-//         $("#total").text(totalPrice.toFixed(2));
-
-//         $(this).closest(".cart-content").remove();
-
-//         itemCount--;
-//         $(".count").text(itemCount);
-//     });
-
-// });
-
 
 // search Bar
-document.getElementById("searchButton").addEventListener("click", function() {
+document.getElementById("searchButton").addEventListener("click", function () {
     let searchQuery = document.getElementById("searchInput").value;
     alert("You searched for: " + searchQuery);
 });
 
-$(document).ready(function(){
-    $("#searchInput").on("keyup",function(){
+$(document).ready(function () {
+    $("#searchInput").on("keyup", function () {
         var value = $(this).val().toLowerCase();
 
-        $("#cont, .product-card").filter(function(){
-            $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
+        $("#cont, .product-card").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         })
     })
 }
 
 )
 
+// contact page
+document.getElementById("help").addEventListener("change", function () {
+    let otherField = document.getElementById("other-field");
+    if (this.value === "other") {
+        otherField.style.display = "block";
+    } else {
+        otherField.style.display = "none";
+    }
+});
+// compare page
 
+function compareProducts() {
+
+    var product1 = document.getElementById("product1").value;
+    var product2 = document.getElementById("product2").value;
+
+    document.getElementById("product1Name").innerText = product1 ? product1 : "Product 1";
+    document.getElementById("product2Name").innerText = product2 ? product2 : "Product 2";
+
+    var productData = {
+      "Product 1": {
+        price: "$199",
+        weight: "1.2 kg",
+        battery: "12 hours"
+      },
+      "Product 2": {
+        price: "$249",
+        weight: "1.5 kg",
+        battery: "10 hours"
+      },
+      "Product 3": {
+        price: "$299",
+        weight: "1.3 kg",
+        battery: "15 hours"
+      }
+    };
+  
+
+    document.getElementById("product1Price").innerText = product1 ? productData[product1].price : "";
+    document.getElementById("product2Price").innerText = product2 ? productData[product2].price : "";
+  
+    document.getElementById("product1Weight").innerText = product1 ? productData[product1].weight : "";
+    document.getElementById("product2Weight").innerText = product2 ? productData[product2].weight : "";
+  
+    document.getElementById("product1Battery").innerText = product1 ? productData[product1].battery : "";
+    document.getElementById("product2Battery").innerText = product2 ? productData[product2].battery : "";
+  }
+  

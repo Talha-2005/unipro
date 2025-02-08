@@ -46,6 +46,7 @@
                         <a href="goldfish.html">GOLDFISH</a>
                     </div>
                 </li>
+                <li><a href="compare.html">Compare</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="contactus.html" class="active">Contact Us</a></li>
             </ul>
@@ -63,7 +64,108 @@
         <!--NAVBAR END-->
     </div>
     <!--HEADER END-->
-    
+    <section class="collection-section">
+        <h2>GET IN TOUCH!</h2>
+        <p class="collection-tagline">"Feel free to reach out-we're here to help!"</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" 
+                pattern="[0-9]{11}" required title="Enter a 11-digit phone number">            
+            </div>
+            
+            <div class="form-group">
+                <label for="help">How can we help you?</label>
+                <select id="help" name="help" required>
+                    <option value="product_info">Product Information</option>
+                    <option value="order_status">Order Status</option>
+                    <option value="return_policy">Return Policy</option>
+                    <option value="other">Other (please specify)</option>
+                </select>
+            </div>
+            
+            <div class="form-group" id="other-field" style="display: none;">
+                <label for="other-text">Please Specify</label>
+                <input type="text" id="other-text" name="other_text" placeholder="Specify your query">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+    <!-- MAP SECTION -->
+    <section class="contact-info">
+        <h2>Our Locations</h2>
+        <p>Visit our store at Aptech Metro Stargate.</p>
+        <p>We are always here to assist you with the best products and services.</p>
+        <div class="info-item">
+            <i class="fa-solid fa-phone"></i> <span>+92 330 356 6284</span>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-envelope"></i> <span>info@universalstationery.com</span>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3139925217724!2d67.14924997572894!3d24.887269144183673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1739033202016!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+       <!-- FOOTER START -->
+       <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assest/images/logo.png" alt="Universal-Stationery Logo">
+                <p>Your One-Stop Shop for All Stationery Needs!</p>
+            </div>
+            <div class="footer-links-support">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="Brands.html">Brands</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-phone"></i>+92 330 356 6284</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@universalstationery.com</p>
+                    <p><i class="fa-solid fa-map-marker-alt"></i> Karachi, Pakistan</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- COPYRIGHT SECTION -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Universal-Stationery. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
     <!--SIDE-NAV START-->
     <div class="side-nav">
         <nav>
@@ -88,6 +190,7 @@
                         <a href="GOLDFISH">GOLDFISH</a>
                     </div>
                 </li>
+                <li><a href="compare.html">Compare</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="contactus.html" class="active">Contact Us</a></li>
             </ul>

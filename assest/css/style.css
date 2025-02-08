@@ -91,7 +91,7 @@ ul li a:hover {
     color: white;
 }
 
-/* Dropdown styling */
+/* Nav Dropdown styling */
 ul {
     list-style: none;
     margin: 0;
@@ -140,107 +140,83 @@ ul li:hover>a {
     background-color: none;
 }
 
-/* add to cart */
-/* .cart{
-    margin-right: 30px;
-    font-size: larger;
-}
-
-.cart a{
-    color: rgba(0, 0, 0, 0.897);
-    font-size: larger;
-    padding: 2px;
-}
-
-.cart a:hover{
-    background-color: rgba(0, 0, 0, 0.897);
-    color: white;
-    border-radius: 6px;
-}
-
-.cart-container{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 10px;
-    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.897);
-    z-index: 1000;
-    width: 400px;
-    padding: 10px;
-    height: 100%;
-    overflow: scroll;
-    background-color: #e4f6fe;
-    border-radius: 6px;
-}
-
-.cart-content{
-    width: 100%;
-    height: 100%;
+/* Compare page */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px black;
+    color: #333;
+  }
+  
+  .cccontainer h1 {
+    text-align: center;
+    color: #ffbd12;
+  }
+  
+  .select-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.cart-pic{
-    width: 90px;
-    height: 90px;
-}
-
-
-.cart-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.cart-info{
-    display: flex;
-    text-align: center;
-    font-size: small;
-    align-self: center;
-    width: 100px;
-    height: 35px;
-}
-
-.cart-price{
-    height: 20px;
-}
-
-.cart-total h3{
-    /* width: 50px; */
-/* font-size: normal;
-    height: 30px;
-    text-align: left;
-    color: hsl(0, 0%, 26%);
-
-}
-.closeCart{
-    text-align: right;
-    font-size: large;
-    margin: 10px;
-    color: hsl(353, 100%, 78%);
-}
-
-a.order{
-    position: fixed;
-    bottom: 0;
-    right: 25px;
-    padding: 5px;
-    text-align: center;
-    background-color: hsl(353, 100%, 78%);
-    width: 395px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #333;
     color: white;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.del i{
-    color: hsl(353, 100%, 78%);
-    cursor: pointer;
-} */
-
-/* menu nav */
+    border: 1px solid #ffbd12;
+  }
+  
+  .comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffbd12;
+    color: black;
+  }
+  
+  table th {
+    background-color: white;
+  }
+  
+  table td {
+    background-color: white; 
+  }
+  
+  /*Compare Responsive Design */
+@media (max-width: 768px) {
+    .select-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    select {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+/*Side menu nav */
 .side-nav {
     display: none;
 }
@@ -709,6 +685,69 @@ a.order{
     color: #333;
 }
 
+.view-details {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.view-details:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.view-details i {
+    margin-right: 8px;
+    color: #ffbd12;
+}
+
+/* view details styling */
+.pproduct-card {
+    width: 80vh;
+    height: 80vh;
+    margin: 20px auto;
+    display: flex;
+    overflow: visible;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    flex-direction: column;
+}
+
+.pproduct-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.pproduct-details {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.pproduct-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.pproduct-description {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    max-height: 200px;
+    color: #666;
+    padding: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 /* Media Queries For Navbar */
 
 @media screen and (max-width:760px) {
@@ -890,7 +929,7 @@ a.order{
     margin-bottom: 30px;
 }
 
-/* BRAND COLLECTION */
+/* BRAND COLLECTION 2*/
 .brand-collection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -899,7 +938,7 @@ a.order{
     justify-content: center;
 }
 
-/* BRAND CARDS */
+/* BRAND CARDS 2 */
 .brand-card {
     background: white;
     border-radius: 10px;
@@ -915,7 +954,6 @@ a.order{
     transition: transform 0.3s ease;
 }
 
-/* HOVER EFFECT */
 .brand-card:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px black;
@@ -1160,4 +1198,136 @@ a.order{
         margin-bottom: 20px;
     }
 }
- 
+
+/* Styling for the detailed info card */
+.info-card {
+    background-color: black;
+    color: #ffbd12;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.info-card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.info-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.info-card strong {
+    color: #ffbd12;
+    font-weight: bold;
+}
+
+/* contact page */
+.contact-form {
+    background: black;
+    color: #ffbd12;
+    padding: 50px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px black;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffbd12;
+    border-radius: 5px;
+    background: #222;
+    color: #ffbd12;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ffbd12;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #222;
+    color: #ffbd12;
+}
+
+/* MAP STYLING */
+.contact-info {
+    background: #000;
+    color: #ffbd12;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.info-item i {
+    color: #ffbd12;
+    font-size: 20px;
+}
+
+.map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
